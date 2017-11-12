@@ -36,11 +36,12 @@ public class GetPkey {
 		return getCookies(str);
 	}
 	public static String getCookies(String str){
+		System.out.println("str:"+str);
 		Gson gson = new Gson();
 		ResultData resultData = gson.fromJson(str, ResultData.class);
-		
+		System.out.println("resultData:"+resultData);
 		String cookies=resultData.getServer_params().getCookie();
-		
+		System.out.println("cookies:"+cookies);
 		return cookies;
 	}
 }

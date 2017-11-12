@@ -98,5 +98,10 @@ public class ResultData {
      public String getMethod() {
          return method;
      }
-
+	@Override
+	public String toString() {
+		return "ResultData [code=" + code + ", show=" + show + ", api=" + api + ", html=" + html + ", order=" + order
+				+ ", cachetime=" + cachetime + ", game=" + game + ", server_params=" + server_params + ", message="
+				+ message + ", data=" + data + ", method=" + method + "]";
+	}
 }
